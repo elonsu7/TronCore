@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TronCore'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TronCore.'
+  s.summary          = 'Core Ethereum data structures and algorithms.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,7 +31,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'TronCore/Classes/**/*'
-  
+  s.public_header_files = 'TronCore/Classes/TrustCore.h', 'TronCore/Classes/Crypto.h'
+
+  s.dependency 'BigInt'
+  s.dependency 'TrezorCrypto', '~> 0.0.8'
+  s.dependency 'SwiftProtobuf', '~> 1.0'
+
+  s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule' }
   # s.resource_bundles = {
   #   'TronCore' => ['TronCore/Assets/*.png']
   # }
