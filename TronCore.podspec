@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'xuchina67' => 'elon.xu@tron.network' }
   s.source           = { :git => 'https://github.com/xuchina67/TronCore.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.platform = :ios, '10.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'TronCore/Classes/**/*'
@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   #   'TronCore' => ['TronCore/Assets/*.png']
   # }
 
-   s.public_header_files = 'Pod/Classes/*.h'
+   s.public_header_files = 'TronCore/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
