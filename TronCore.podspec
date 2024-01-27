@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'TronCore/Classes/**/*'
-  s.public_header_files = 'TronCore/Classes/TronCore.h', 'TronCore/Classes/Crypto.h'
+#  s.public_header_files = 'TronCore/Classes/TronCore.h', 'TronCore/Classes/EthereumCrypto.h'
 
   s.dependency 'BigInt'
   s.dependency 'TrezorCrypto', '~> 0.0.8'
@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   #   'TronCore' => ['TronCore/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
